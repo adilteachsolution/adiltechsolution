@@ -1,6 +1,6 @@
 {
   "name": "adil-ai-os-v1-render-ready",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Adil AI OS v1 - flat mobile-upload friendly Render deployment",
   "type": "module",
   "scripts": {

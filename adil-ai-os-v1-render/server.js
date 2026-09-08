@@ -16,7 +16,7 @@ app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
 app.use(morgan('tiny'));
-app.get('/api/health', (_req, res) => res.json({ ok: true, app: 'Adil AI OS', version: '1.0.1' }));
+app.get('/api/health', (_req, res) => res.json({ ok: true, app: 'Adil AI OS', version: '1.1.0' }));
 app.get('/api/business', (_req, res) => res.json(business));
 app.use('/api/chat', chatRouter);
 app.use('/api/leads', leadsRouter);
