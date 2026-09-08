@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adil AI OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <span class="badge">Adil Tech Solution</span>
+      <h1>Adil AI OS</h1>
+      <p>Website AI assistant for service guidance, package recommendations, lead capture and WhatsApp handover.</p>
+      <div class="packages">
+        <article><b>Basic</b><strong>199</strong><span>Simple projects</span></article>
+        <article><b>Standard</b><strong>499</strong><span>Growing businesses</span></article>
+        <article><b>Premium</b><strong>999</strong><span>Advanced solutions</span></article>
+      </div>
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-head"><div><b>Adil AI OS</b><small>Business assistant</small></div><span id="status">Online</span></div>
+      <div id="messages" class="messages"></div>
+      <div class="quick">
+        <button data-msg="I need a website">Website</button>
+        <button data-msg="Tell me your packages and pricing">Packages</button>
+        <button data-msg="I need AI automation">AI Solution</button>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Type your business inquiry..." />
+        <button>Send</button>
+      </form>
+      <button id="leadButton" class="secondary">Share my details / WhatsApp</button>
+    </section>
+  </main>
+
+  <dialog id="leadDialog">
+    <form id="leadForm" method="dialog" class="lead-form">
+      <h2>Continue your inquiry</h2>
+      <input name="name" placeholder="Name" required />
+      <input name="phone" placeholder="WhatsApp / phone" />
+      <input name="email" type="email" placeholder="Email" />
+      <input name="service" id="leadService" placeholder="Service" />
+      <select name="package" id="leadPackage"><option>Basic</option><option>Standard</option><option>Premium</option></select>
+      <textarea name="message" placeholder="Project details"></textarea>
+      <div class="dialog-actions"><button type="button" id="closeDialog" class="ghost">Cancel</button><button type="submit">Save & Continue</button></div>
+      <p id="leadResult"></p>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
